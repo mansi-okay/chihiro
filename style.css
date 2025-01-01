@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+}
+
+#nav{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+#circles{
+    display: flex;
+    align-items: center;
+}
+.circle{
+    background-color: black;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+}
+#nav-right{
+    font-size: 1vw;
+    font-weight: 10;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: #333;
+}
+#nav-right span{
+    color: grey;
+}
+#nav-right h5{
+    display: none;
+}
+
+#header{
+    display: flex;
+    width: 60vw;
+    height: 50px;
+    /* background-color: aquamarine; */
+    font-size: 1.1;
+    text-transform: uppercase;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    font-weight: 10;
+    color: #333;
+}
+
+#center{
+    /* background-color: blueviolet;  */
+    width: 100%;
+    height: 220px;
+    display: flex;
+    overflow-x: auto;
+}
+#center::-webkit-scrollbar{
+    background-color: transparent;
+    height: 5px;
+}
+#center::-webkit-scrollbar-thumb{
+    background-color: rgb(31, 7, 76); 
+}
+.elem{
+    height: 100%;
+    width: 1000px;
+    /* border: #333 solid 2px;   */
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    /* background-color: aqua;  */
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.box-top{
+    /* background-color: aquamarine;   */
+    width: 11vw; 
+    justify-content: space-between;
+    font-size: 2vw;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+.box-top p{
+    font-size: 1.1vw;
+    font-weight: 100;
+    color: #333;
+}
+.text{
+    /* background-color: bisque;  */
+    font-size: 8vw;
+    font-weight: 1;
+    width: fit-content;
+}
+
+
+#image{
+    /* background-color: aquamarine; */
+    height: calc(100% - 320px);
+    width: 100%;
+    background: url(https://w.wallhaven.cc/full/nz/wallhaven-nz67rg.jpg);
+    background-size: cover;
+    background-position: 0% 50%;
+}
+
+
+@media (max-width: 600px) {
+    
+#main{
+    width: 100%;
+    height: 100%;
+}
+
+#nav{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+#circles{
+    display: flex;
+    align-items: center;
+}
+.circle{
+    background-color: black;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+#nav-right{
+    font-size: 4.5vw;
+    font-weight: 10;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: #333;
+}
+.a{
+    display: none;
+}
+#nav-right h5{
+    font-weight: 900;
+    display: flex;
+    gap: 20px;
+}
+
+#header{
+    display: flex;
+    width: 100vw;
+    height: 60px;
+    font-size: 3vw;
+    text-transform: uppercase;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-weight: 100;
+    color: #333;
+    overflow-x: auto;
+    gap: 50px;
+}
+#header::-webkit-scrollbar{
+    background-color: transparent;
+    height: 3px;
+}
+#header::-webkit-scrollbar-thumb{
+    background-color: rgb(31, 7, 76); 
+}
+
+#center{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    overflow-x: auto;
+}
+#center::-webkit-scrollbar{
+    background-color: transparent;
+    height: 3px;
+}
+#center::-webkit-scrollbar-thumb{
+    background-color: rgb(31, 7, 76); 
+}
+.elem{
+    height: 100%;
+    width: 270px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.box-top{
+    width: 11vw; 
+    justify-content: space-between;
+    font-size: 5vw;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.box-top p{
+    font-size: 2.6vw;
+    font-weight: 600;
+    color: #333;
+}
+.text{
+    font-size: 14vw;
+    font-weight: 1;
+    width: fit-content;
+}
+
+
+#image{
+    height: calc(100% - 310px);
+    width: 100%;
+    background: url(https://w.wallhaven.cc/full/nz/wallhaven-nz67rg.jpg);
+    background-size: cover;
+    background-position: 40% 10%;
+}
+}
